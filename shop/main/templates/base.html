@@ -3,32 +3,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>GetFit - Доставка самого вкусного правильного питания в вашем городе!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
 
     <nav class = "first-nav" style = "background-color: #3F3F3F;display:flex;justify-content:space-between;align-items:center;min-height: 150px;padding:0 20px;">
-        <div>
+        <div style = "margin-left: 30px;">
             <img src="{% static 'images/getfit-logo.png' %}" alt="" class = "logo-img">
         </div>
-        <div style = "max-width: 400px;">
-            <h4 style = "color:white;">
+        <div style = "max-width: 400px; position: relative; right: 110px;">
+            <h4 style = "color:white; font-size: 20px; ">
                 Доставка самого вкусного правильного питания в вашем городе!
             </h4>
         </div>
         <div>
-            <a href="{% url 'login' %}" class = "authorization-link">Войти</a><br>
-            <a href="{% url 'register' %}" class = "authorization-link">Регистрация</a>
+            <img src="{% static 'images/icons8-facebook-circled-90.png' %}" alt="" class = "logo-img" style = "width : 40px; height:40px; position: relative; right: 20px;">
+            <img src="{% static 'images/icons8-vk-circled-filled-100.png' %}" alt="" class = "logo-img" style = "width : 36px; height:36px; position: relative; right: 10px;">
+            <img src="{% static 'images/icons8-instagram-96.png' %}" alt="" class = "logo-img" style = "width : 38px; height:38px;">
+        </div>
+        <div>
+            <a href="{% url 'login' %}" class = "authorization-link" style = "color: white; font-size : 18px;">ВОЙТИ</a><br>
+            <a href="{% url 'register' %}" class = "authorization-link" style = "color: white; font-size : 18px;">РЕГИСТРАЦИЯ</a>
         </div>
     </nav>
     <nav class = "second-nav">
-        <a href="{% url 'programs' %}" class = "second-nav__link second-nav__link--active">Программы питания</a>
-        <a href="{% url 'detox_programs' %}" class = "second-nav__link">Detox программы</a>
-        <a href="{% url 'products' %}" class = "second-nav__link">Меню бар</a>
-        <a href="" class = "second-nav__link">Почему пп?</a>
-        <a href="" class = "second-nav__link">Сертификаты</a>
+        <a href="{% url 'programs' %}" class = "second-nav__link second-nav__link--active" style = "font-size: 18px; color: #ccffcc">Программы питания</a>
+        <a href="{% url 'detox_programs' %}" class = "second-nav__link" style = "font-size: 18px; color: #ccffcc; ">Detox программы</a>
+        <a href="{% url 'products' %}" class = "second-nav__link" style = "font-size: 18px; color: #ccffcc;">Меню бар</a>
+        <a href="{% url 'why_getfit' %}" class = "second-nav__link" style = "font-size: 18px; color: #ccffcc;">Почему GetFit?</a>
+        <a href="" class = "second-nav__link" style = "font-size: 18px; color: #ccffcc;">Сертификаты</a>
+        <a href="" class = "second-nav__link" style = "font-size: 18px; color: #ccffcc;">Контакты</a>
     </nav>
 
         {% block body %}

@@ -38,3 +38,7 @@ def detox_programs(request):
                 'programs': programs
             }
         return render(request , 'detox_programs.html' , context)
+
+def why_getfit(request):
+    if request.method == 'GET':
+        return render(request, 'why_getfit.html')

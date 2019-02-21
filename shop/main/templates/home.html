@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home page</title>
-</head>
-<body>
-    <h1>Hello, user! Welcome to our shop</h1>
-    <a href="{% url 'login' %}">Sign in</a>
-    <div>
-        <p>No account?</p>
-        <a href="{% url 'register' %}">Sign up</a>
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+    <div style = "background-image:url({% static 'images/main.jpg' %}); min-height: 500px;background-repeat:no-repeat;background-size:cover;background-attachment:fixed; opacity: 0.8;">
+        <div style="margin-left: 400px; padding: 30px;">
+            <h3 style="width: 200px; height: 400px; margin-left: 500px; font-size: 44px; color: black; font-style: italic; margin-top: 20px;">САМЫЕ ЭФФЕКТИВНЫЕ И ВКУСНЫЕ ПРОГРАММЫ ДЛЯ ПОХУДЕНИЯ</h3>
+        </div>
+        <button style="background-color:white; border-radius: 2px;"></button>
     </div>
-</body>
-</html>
+
+{% endblock %}

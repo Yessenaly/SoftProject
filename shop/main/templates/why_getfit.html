@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+    <div style = "background-image:url({% static 'images/back-whygf.jpg' %}); min-height: 550px;background-repeat:no-repeat;background-size:cover;background-attachment:fixed; opacity: 0.6;">
+        <div class="container" style=" width: 700px; height: 100px;margin-right: 600px; ">
+            <img src="{% static 'images/company_1.jpg' %}"  style = "opacity: 1">
+        </div>
+        <div class = "container" style="margin-left: 600px;  width: 700px; height: 150px;">
+            <p style="color: black; font-weight: bold; font-size: 20px;">Getfit — это сервис по доставке в Алматы и Астане правильного, здорового и сбалансированного питания в контейнерах на день для активных людей, занимающихся спортом или просто выбирающих здоровый образ жизни. Две программы - Power и Fit, в каждой - по два меню с высочайшим контролем качества хранения и закупки продуктов.</p>
+        </div>
+         <div class = "container" style=" margin-left: 570px;padding: 50px; width: 800px; height: 150px;">
+            <p style="color: black; font-weight: bold; font-size: 20px;">Наши наборы правильного питания на день состоят из 5 приемов пищи которые в свою очередь различаются калорийностью от 900 Ккал до 3000 Ккал. А так же есть специальные программы как-Вегетарианская и программа Меню Чемпионов, составленная при непосредственном участии нашего Амбассадора Сергея Серещева.</p>
+        </div>
+    </div>
+
+{% endblock %}

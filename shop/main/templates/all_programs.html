@@ -3,26 +3,26 @@
 {% block body %}
     <div style = "display:flex; justify-content:space-around; align-items:center; height:500px;">
         <div class = "col-sm-3 text-center" style = "background-color:#B9E37D; min-height:400px; max-width:300px; border-radius:20px;">
-            <h4 style = "color:white; border-bottom: 1px solid black; padding:10px 0;">Для похудения</h4>
+            <a href="" style = " color:white; border-bottom: 1px solid black; padding:10px 0; font-size: 20px; ">Для похудения</a>
             {% for pr in programs %}
                 {% if pr.category == "Для похудения" %}
-                    <p style = "text-align:left;font-weight:bold; margin-bottom: 20px;">{{pr.name}}<br>Цена: {{pr.price}} тенге</p>
+                    <p style = "text-align:left;font-weight:bold; margin-bottom: 40px; margin-top: 20px; font-size: 20px; color: black;"> - {{pr.name}}<br>Цена: {{pr.price}} тенге</p>
                 {% endif %}
             {% endfor %}
         </div>
         <div class = "col-sm-3 text-center" style = "background-color:#B9E37D; min-height:400px; max-width:300px; border-radius:20px;">
-            <h4 style = "color:white; border-bottom: 1px solid black; padding:10px 0;">Для здорового образа жизни</h4>
+            <a href="" style = "color:white; border-bottom: 1px solid black; padding:10px 0; font-size: 20px;">Для здорового образа жизни</a>
             {% for pr in programs %}
                 {% if pr.category == "Для здорового образа жизни" %}
-                    <p style = "text-align:left;font-weight:bold; margin-bottom: 20px;">{{pr.name}}<br>Цена: {{pr.price}} тенге</p>
+                    <p style = "text-align:left;font-weight:bold;margin-bottom: 40px; margin-top: 20px; font-size: 20px; color: black;"> - {{pr.name}}<br>Цена: {{pr.price}} тенге</p>
                 {% endif %}
             {% endfor %}
         </div>
         <div class = "col-sm-3 text-center" style = "background-color:#B9E37D; min-height:400px; max-width:300px; border-radius:20px;">
-            <h4 style = "color:white; border-bottom: 1px solid black; padding:10px 0;">Для вегетрианцев</h4>
+            <a href="" style = "color:white; border-bottom: 1px solid black; padding:10px 0; font-size: 20px;">Для вегетрианцев</a>
             {% for pr in programs %}
                 {% if pr.category == "Для вегетрианцев" %}
-                    <p style = "text-align:left;font-weight:bold; margin-bottom: 20px;">{{pr.name}}<br>Цена: {{pr.price}} тенге</p>
+                    <p style = "text-align:left;font-weight:bold; margin-bottom: 40px; margin-top: 20px; font-size: 20px; color: black;"> - {{pr.name}}<br>Цена: {{pr.price}} тенге</p>
                 {% endif %}
             {% endfor %}
         </div>
