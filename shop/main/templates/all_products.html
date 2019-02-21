@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class = "container">
+        <h1>Горячие блюда</h1>
+        <div style = "display:flex;justify-content:space-between;">
+            {% for p in products %}
+                {% if p.category == 'Горячие блюда' %}
+                    <div class = "card" style = "width:33%;">
+                        <img src="{{p.thumbnail.url}}" alt="" style = "width: 200px; height:150px;">
+                        <h3>{{p.name}}</h3>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

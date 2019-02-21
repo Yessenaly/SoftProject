@@ -23,7 +23,7 @@ def login(request):
         user = auth.authenticate(username=username, password=password)
         if user is not None and user.is_active:
             auth.login(request, user)
-            return redirect('home')
+            return redirect('products')
         else:
             error = "username or password incorrect"
             return render(request, 'login.html', {'error': error})

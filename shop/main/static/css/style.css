@@ -1,0 +1,27 @@
+.logo-img {
+    max-width: 140px;
+}
+
+.first-nav {
+    border-bottom: 1px solid black;
+}
+
+.authorization-link {
+    color: #30C2FF;
+}
+
+.second-nav {
+    padding:20px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3F3F3F
+}
+
+.second-nav__link {
+    color: #C6D7AA;
+    font-weight: bold;
+}
+
+.second-nav__link--active {
+    color: #93C444;
+}

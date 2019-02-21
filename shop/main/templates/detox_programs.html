@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+    <div style = "background-image:url({% static 'images/bg-detox.jpg' %}); min-height: 500px;background-repeat:no-repeat;background-size:cover;background-attachment:fixed;">
+        <div style = "background: linear-gradient(rgba(255,255,255,0.3) , rgba(255,255,255,0.3));min-height:700px;;">
+            <div class = "container">
+                <h1 style = "border-bottom: 1px solid black; padding-bottom: 20px;color:#4CAF50;">Detox программы</h1>
+                <div style = "diplay: flex; justify-content: space-between;padding: 30px;">
+                    {% for pr in programs %}
+                        <div style = "background: linear-gradient(rgba(255 , 24 ,14,0.3),rgba(255 ,24,14,0.3)); width: 300px; height:150px;padding: 20px;">
+                            <h4>{{ pr.name }}</h4>
+                            <ul style = "padding: 0;">
+                                <li>
+                                    Меню на {{pr.duration}} недель
+                                </li>
+                                <li>
+                                    Цена: {{pr.price}} тенге
+                                </li>
+                            </ul>
+                        </div>
+                        <button style = "width:300px; border: none;background-color:#F2F4E9;padding:10px 0;outline:none;">
+                            Выбрать
+                        </button>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
